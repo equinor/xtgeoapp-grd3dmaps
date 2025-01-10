@@ -25,7 +25,7 @@ def zonation(config, grd):
     """
 
     if "zproperty" in config["zonation"] and "zranges" in config["zonation"]:
-        raise ValueError('Cannot have both "zproperty" and "zranges" in ' '"zonation"')
+        raise ValueError('Cannot have both "zproperty" and "zranges" in "zonation"')
 
     usezonation = np.zeros(grd.dimensions, dtype=np.int32)
     zoned = {}
